@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: cornflowerblue;
+
+        }
+
+        .navbar {
+            background-color: blueviolet;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        nav ul {
+            color: white;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li a {
+            flex-wrap: wrap;
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            position: relative;
+        }
+
+        nav li a:hover {
+            color: turquoise;
+            transition: 0.5s;
+
+        }
+
+        li select {
+            display: flex;
+            font-size: larger;
+            font-family: sans-serif;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+        }
+
+        li select:hover {
+            color: turquoise;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Compnay</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">ContactUS</a></li>
+                <li><Select title="Register/login">
+                        <Option>Sign Up</Option>
+                        <option>Sign IN</option>
+                    </Select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
