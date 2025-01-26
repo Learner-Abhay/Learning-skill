@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demonstration</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            /*This property help us to put elements in row and its default behaviour is left to right*/
+            height: auto;
+            width: 20vh;
+        }
+
+        .number {
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+
+        }
+
+        .shade1 {
+            background-color: red;
+        }
+
+        .shade2 {
+            background-color: blue;
+        }
+
+        .shade3 {
+            background-color: yellow;
+        }
+
+        .shade4 {
+            background-color: green;
+        }
+
+        .shade5 {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This all containers display example of flex and i have only Demonstration of 3 properties you can contribute more. -->
+    <div class="container">
+        <div class="number">
+            <p class="number shade1">1</p> <!--Default behaviour-->
+            <p class="number shade2">2</p>
+            <p class="number shade3">3</p>
+            <p class="number shade4">4</p>
+            <p class="number shade5">5</p>
+        </div>
+    </div>
+    <div class="container">
+        <div style=flex-direction:column; class="number"> <!-- Column Property -->
+            <p class="number shade1">1</p>
+            <p class="number shade2">2</p>
+            <p class="number shade3">3</p>
+            <p class="number shade4">4</p>
+            <p class="number shade5">5</p>
+        </div>
+    </div>
+    <div class="container">
+        <div style=flex-direction:column-reverse; class="number"> <!-- Column reverse Property -->
+            <p class="number shade1">1</p>
+            <p class="number shade2">2</p>
+            <p class="number shade3">3</p>
+            <p class="number shade4">4</p>
+            <p class="number shade5">5</p>
+        </div>
+    </div>
+</body>
+
+</html>
