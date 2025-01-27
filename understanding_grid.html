@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid demo</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 2px solid;
+            display: grid;
+            /*This property does not apply directly like flex*/
+            grid-template-columns: repeat(3, 1fr);
+            /*Both gtr and gtc are must if you want to have any benefit */
+            grid-template-rows: repeat(2, 200px);
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .item {
+            border: 3px solid;
+            background-color: bisque;
+            border-radius: 20px;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> <!--  This my Container that has all item that should be manipulated by grid properties -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+
+</html>
