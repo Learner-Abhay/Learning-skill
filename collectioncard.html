@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Shoes Collection</title>
+  <style>
+    *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+         body{
+           
+            background-image:linear-gradient(rgba(1,1,1,0.75),rgba(1,1,1,0.75)) ,url("background2.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            height:140vh;        
+            width:100%;
+        } 
+        h1 p{
+            color:white;
+            padding: 5px;
+            
+        }
+       .navbar{
+        width: 100%;
+        margin:auto;
+        padding:35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        
+       }
+       .navbar ol a{
+        list-style: none;
+        display: inline-block;
+        color:white;
+        margin:0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+       }
+       .navbar ol a::after{
+            content: '';
+            height:3px;
+            width:0%;
+            background:blueviolet;
+            position:absolute;
+            left:0;
+            bottom:-10px;
+            transition: 0.5s;
+             }
+
+            .navbar ol a:hover::after{
+                width:100%;
+               }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .shoe-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      width:250px;
+    }
+
+    .shoe-card:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 5px silver;
+    }
+
+    .shoe-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .shoe-details {
+      padding: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      color: #666;
+    }
+        
+    .crow{
+                opacity: 0;
+                transform: translateY(30px);
+                animation: moveup 0.5s linear forwards;
+                animation-delay: 0.5s;
+             }
+             @keyframes moveup {
+                100%{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+             }
+             section a{
+              text-decoration: none;
+              color:#333;
+             }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1><p>K18 Shoes</p></h1>
+    <ol>
+    <!-- <img src="logo.png" alt=""> -->
+    <a href="index.php">Home</a>
+    <a href="collection.php">Collection</a>
+    <a href="#">Membership</a>
+    <a href="#">Founders</a>
+    <a href="#">Reviews</a>
+    </ol>
+    </div>
+
+  <section class="crow">
+    <div class="shoe-card">
+      
+        <a href="products.php"><img class="shoe-image" src="michealjordan.jpg">
+        <div class="shoe-details">
+        <h2>Michael Jordan Edition</h2>
+        <p>A collection of basketball shoes inspired by the legendary Michael Jordan.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="james.jpg">
+      <div class="shoe-details">
+        <h2>Lebron James Edition</h2>
+        <p>Get your hands on new lebron collection and be the part of change.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="vkcollection.php"><img class="shoe-image" src="virat.jpg">
+      <div class="shoe-details">
+        <h2>Virat Kohli Edition</h2>
+        <p>Meet the king and dont jget settle by anyone BE bold BE brash!.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="oneal.jpg">
+      <div class="shoe-details">
+        <h2>Shaquille O Neal Edition</h2>
+        <p>The Gentle Giant who destroyed rims and an inevitable force.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="dhoni.jpeg">
+      <div class="shoe-details">
+        <h2>MS Dhoni Edition</h2>
+        <p>The finisher and the mayehm for bowlers give your fashion a finishing sense.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="singh.jpg">
+      <div class="shoe-details">
+        <h2>Yuvraj Singh Edition</h2>
+        <p>The sixer king and and the destroyer get your hands on Yuvi's collection.</p>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="ronaldo.jpg">
+      <div class="shoe-details">
+        <h2>Cristiano Ronaldo Edition</h2>
+        <p>The Greatest of all Time cant say a word just wear and feel it.</p>
+        </a>
+      </div>
+    </div>
+
+
+    
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="kobe.jpg">
+      <div class="shoe-details">
+        <h2>Kobe Bryant Edition</h2>
+        <p>The Mamba himself who changed the game who went against legends defying all odds.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="sunil.jpg">
+      <div class="shoe-details">
+        <h2>Sunil Chetri Edition</h2>
+        <p>The Indian football legend who made India famous with his feets!! shop with pride .</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="shoe-card">
+    <a href="products.php"><img class="shoe-image" src="messi.jpg">
+      <div class="shoe-details">
+        <h2>Lionel Messi Edition</h2>
+        <p>The Greatest of all Time and the La Pulga visit for limited edition.</p>
+        </a>
+      </div>
+    </div>
+    
+
+  </section>
+
+</body>
+</html>
