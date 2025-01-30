@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube card design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 26%, rgba(148, 220, 233, 0.9921218487394958) 50%);
+            margin-top: 40px;
+        }
+
+        .conatiner {
+            display: flex;
+            ;
+            align-items: center;
+            justify-content: center;
+            content: normal;
+
+        }
+
+        img {
+            height: 70vh;
+            width: 100%;
+        }
+
+        .cards {
+            margin: 8%;
+            display: grid;
+        }
+
+        .cards img {
+            height: 20vh;
+            width: 30vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="shoes.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="background2.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="shoesproject.jpg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="cards">
+        <img src="shoes.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Click to watch more</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
