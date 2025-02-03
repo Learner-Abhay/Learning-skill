@@ -43,10 +43,6 @@ body {
     border-radius: 25px;
 }
 
-#msg {
-    color: #fff;
-    font-size: 5vmin;
-}
 
 .msg-container {
     height: 15vmin;
