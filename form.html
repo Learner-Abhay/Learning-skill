@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Using TailwindCSS</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gray-900 conatiner flex justify-center items-center min-h-screen">
+    <div class="bg-gray-700 p-20 rounded-4xl">
+        <H2 class="text-center font-medium text-white mb-6">Registration</H2>
+        <div>
+            <form>
+                <div class="mb-3">
+                    <label class="font-medium text-white" for="name">Name:</label>
+                    <input placeholder="Name"
+                        class="w-full px-3 py-2 bg-gray-600 rounded text-white border-gray-600 focus:outline-none"
+                        type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="font-medium text-white" for="contact">Contact No:</label>
+                    <input placeholder="Contact No"
+                        class="w-full px-3 py-2 bg-gray-600 rounded text-white border-gray-600 focus:outline-none"
+                        type="number">
+                </div>
+                <div class="mb-3">
+                    <label class="font-medium text-white" for="email">Email:</label>
+                    <input placeholder="Email"
+                        class="w-full px-3 py-2 bg-gray-600 rounded text-white border-gray-600 focus:outline-none"
+                        type="email">
+                </div>
+                <div class="mb-3">
+                    <label class="font-medium text-white" for="password">Password:</label>
+                    <input placeholder="Password"
+                        class="w-full px-3 py-2 bg-gray-600 rounded text-white border-gray-600 focus:outline-none"
+                        type="password">
+                </div>
+                <div class="mb-3">
+                    <label class="font-medium text-white" for="uploadfiles">Upload:</label>
+                    <input placeholder="uploadfiles"
+                        class="w-full px-3 py-2 bg-gray-600 rounded text-white border-gray-600 focus:outline-none"
+                        type="file">
+
+                </div>
+                <button type="submit"
+                    class="bg-blue-500 w-full text-white py-2 rounded-md hover:bg-blue-900">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
