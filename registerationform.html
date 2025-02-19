@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function registration() {
+            var name = document.forms.regform.Name.value;
+            var email = document.forms.regform.Email.value;
+            var phone = document.forms.regform.Tallephone.value;
+            var subject = document.forms.regform.Subject.value;
+            var password = document.forms.regform.Password.value;
+            var address = document.forms.regform.Address.value;
+            regEmail = /^\w+([\\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/r;
+            var regPhone = /^\d{10}$/;
+            var regName = /\d+$/r;
+            if (name == " " || regName.test(Name)) {
+                window.alert("Please Enter Your Name");
+                Name.focus();
+                return false;
+            }
+            if (address == " ") {
+                window.alert("Please Enter Your Address");
+                Address.focus();
+                return false;
+            }
+            if (email == " " || !regEmail.test(Email)) {
+                window.alert("Please Enter Valid Email");
+                Address.focus();
+                return false;
+            }
+            if (password == " " || !regPassword.test(Password)) {
+                alert("Please Enter Your Password");
+                Password.focus();
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password Should be Atleat 6 Character Long");
+                Password.focus();
+                return false;
+            }
+            if (phone == " " || !regPhone.test(Phone)) {
+                alert("Please Enter Valid Number");
+                Phone.focus();
+                return false;
+            }
+            if (subject.selectedIndex == "") {
+                alert("Please Enter Choose Your Course");
+                Subject.focus();
+                return true;
+            }
+        }
+    </script>
+    <style>
+        div {
+            box-sizing: border-box;
+            width: 100%;
+            border: 100px solid red;
+            float: left;
+            align-content: center;
+            align-items: center;
+        }
+
+        form {
+            margin: 0px auto;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Registration</h1>
+    <div>
+        <form name="regform" onsubmit="return registration()" method="POST">
+            <p><label>Name: <input type="text" required></label></p>
+            <p><br><label>Last Name : <input type="text" required></label></p>
+           <p> <br><label>Address: <input type="text" required></label></p>
+            <p><br><label>Contact NO: <input type="number" required></label></p>
+            <p><br><label>Gmail: <input type="gmail" required></label></p>
+            <p><br><label>Gender:<input type="radio">MALE<input type="radio">Female</label></p>
+
+            
+        </form>
+    </div>
+</body>
+
+</html>
