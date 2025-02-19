@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>registration</title>
+        <link rel="stylesheet" href="login.css">
+        <style>
+* {box-sizing: border-box}
+
+.firstline
+{
+    color: black;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+}
+p
+{
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container 
+{
+  padding: 16px;
+}
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:transparent;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  align-items: center;
+  background-color:transparent;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height:10%;
+ 
+  
+}
+
+.registerbtn:hover {
+  background-color:chocolate;
+  border-radius: 50px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+a 
+{
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+    </style>
+    <script>
+    function loginform(){  
+    var email=document.myform.email.value;  
+    var psw=document.myform.psw.value;       
+      
+    if (email==null || email==""){  
+    alert("Email can't be blank");  
+    return false;  
+    }
+    elseif (psw.length<6)
+    {  
+    alert("Password must be at least 6 characters long.");  
+    return false;   
+    }
+    
+}  
+</script>
+    </head>
+    <body>
+    <form action="about.html" name="myform" onsubmit="return  loginform()">
+    <div class="container">
+      <h1 class="firstline">Login</h1>
+      <p>FIll this form to access your account</p>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" >
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" >
+  
+     
+  
+      <p>By creating an account you agree to our <a href="project.html">Terms & Privacy</a></p>
+      <button type="submit" class="registerbtn" align-items="center">LOGIN in your ACCOUNT</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="project.html">Sign in</a></p>
+    </div>
+  </form>
+    </body>
+</html>
