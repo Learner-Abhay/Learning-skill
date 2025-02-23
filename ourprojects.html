@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>vtcbcsr</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="login.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <style>
+          .second
+          {
+            
+            position:relative;
+            align-content: center;
+            align-items:center;
+            font-size: 22px;
+            
+          }
+            .swiper {
+           
+            
+              align-items: center;
+                 width: 1200px;
+                height: 600px;
+                display: flexbox;
+                justify-content: center;
+                margin-top: 10%;
+                
+                
+                }
+                .swiper img{
+                  
+                  align-items: center;
+                 width: 1200px;
+                height: 600px;  
+              
+                }
+               
+               
+        </style>
+     </head>
+    <body>
+        <div class="banner">
+        <h1 class="heading">!Nterior</h1>
+        
+        <div class="navbar">
+        <ol>
+         <a href="project.html">Home</a>
+            <a href="ourprojects.html">Our Projects</a>
+           <a href="ourteam.html">Our Team</a>
+           
+           <a href="about.html">About Us</a>
+        </ol>
+        
+        </div>
+        
+
+    
+        <div>
+            <div class="swiper">
+        
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide"><img src="livingroom.jpg" ></div>
+                  <div class="swiper-slide"><img src="bedroom.jpg" ></div>
+                  <div class="swiper-slide"><img src="kitchen.jpg" ></div>
+                  <div class="swiper-slide"><img src="custom.jpg" ></div>
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="3">-+</div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+              </div>
+
+        
+        </div>
+    </div>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    
+      const swiper = new Swiper(".swiper-wrapper")
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  
+  direction: 'horizontal',
+  loop: true,
+
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
+    <footer id="footer">
+      <a href="ourprojects.html"><span id="bts">Next</span></a>
+      <div id="main-footer">            
+          <h2 id="f1">Interior<font style="color: aqua;"></font></h2>
+          <h4 id="f2">Visit Our Website to make your DREAM House</h4><br><br>
+          <h3 id="f3">Visit Our Social Media Handles</h3>
+          <ul id="f4">
+              <i class="fa-brands fa-square-facebook">Facebook</i>
+    <i class="fa-brands fa-instagram">Instagram</i>
+    <i class="fa-brands fa-linkedin">Linkedin</i>
+    <i class="fa-brands fa-reddit">Reddit</i>
+             
+          </ul>
+          <p id="licence">Copyright &copy;2023 Interior.Madeby<span>Sharma Abhay</span></p><br>
+      </div>
+  </footer>
+    </body>
+    </html>

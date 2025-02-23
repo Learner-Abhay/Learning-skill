@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <title>vtcbcsr</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="login.css">
+        <style>
+            a{
+          color: #333333;
+          font-weight: 400;
+          outline: none;
+          text-decoration: none;
+          transition: 0.5s;
+      }
+      a:hover,
+      a:focus{
+          outline: none;
+          text-decoration: none;
+      }
+      p{
+          padding: 0;
+          margin: 0 0 15px 0;
+          color: #454545;
+          font-weight: 300;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+          padding: 0;
+          margin: 0 0 15px 0;
+          color: #333333;
+          font-weight: 700;
+      }
+      img{
+          width: 100%;
+          height: auto;
+      }
+      .container{
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      .section-title{
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 80px;
+          margin-top: 40px;
+          text-align: center;
+      }
+      .section-title h1{
+          display: inline-block;
+          font-size: 35px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #000000;
+          margin: 0 0 5px;
+          position: relative;
+      }
+      .section-title h1::before{
+          content: '';
+          left: 0;
+          position: absolute;
+          height: 3px;
+          right: 32%;
+          background-color: #50c5fc;
+          bottom: -5px;
+      
+      }
+      .container .section-title h1::before{
+          left: 30%;
+      }
+      .row{
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          margin-left: -15px;
+      }
+      .column{
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          flex: 0 0 100%;
+          max-width: 100%;
+      }
+      .team{
+          margin-bottom:30px ;
+      }
+      .team .team-img{
+          position: relative;
+          font-size: 0;
+          text-align: center;
+      }
+      .team .team-img img{
+          width: 160px;
+          height: auto;
+          border-radius: 100%;
+          border: 20px solid #f3f4fa;
+      }
+      
+      .team .team-content{
+          padding: 80px 20px 20px 20px;
+          margin-top: -80px;
+          text-align: center;
+          background: #f3f4fa;
+          border-radius: 10px;
+      }
+      .team .team-content h2{
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      }
+      .team .team-content h3{
+          font-size: 16px;
+          font-weight: 300;
+      }
+      .team .team-content h4{
+          font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-style: italic;
+      margin-bottom: 0;
+      }
+      .team .team-content p{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+      }
+      .team .team-social{
+          position: relative;
+          width: auto;
+          height: auto;
+          padding: 35px;
+          top: 0;
+          left:0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255, 255, 255, .6);
+          transition: all 1s;
+          font-size: 0;
+          z-index: 1;
+          opacity: 0;
+      }
+      .team:hover .team-social{
+          opacity: 1;
+      }
+      .team .team-social a{
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin-right:5px ;
+          padding: 11px 0 10px 0;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 16px;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 10px;
+          transition: all .3s;
+          margin-top: 50px;
+      }
+      .team .team-social a.social-tw{
+          background: #00acee;
+      }
+      .team .team-social a.social-fb{
+          background: #3b5998;
+      }
+      .team .team-social a.social-li{
+          background: #0e76a8;
+      }
+      .team .team-social a.social-in{
+          background: #3f729b;
+      }
+      .team .team-social a.social-yt{
+          background: #c4302b;
+      }
+      .team .team-social a:last-child{
+          margin-right: 0;
+      }
+      
+      .team .team-content .team-social:hover{
+          opacity:2s;
+      }
+
+        </style>
+</head>
+    <body>
+        <div class="banner">
+        <h1 class="heading">!Nterior</h1>
+        
+        <div class="navbar">
+        <ol>
+         <a href="project.html">Home</a>
+            <a href="ourprojects.html">Our Projects</a>
+           <a href="ourteam.html">Our Team</a>
+            <a href="about.html">About Us</a>
+        </ol>
+        </div>
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Team Page</h1>
+            </div>
+    
+            <div class="row">
+    
+    
+                <div class="column">
+                    <div class="team">
+                        <div class="team-img">
+                            <img src="drake.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Drake</h2>
+                            <h3>CEO & Founder</h3>
+                            <p>Some text goes here that describes about team members</p>
+                            <h4>abc@gmail.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-tw"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-fb"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-li"> <i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-in"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-yt"> <i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="team">
+                        <div class="team-img">
+                            <img src="akshay.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Akshay</h2>
+                            <h3>Art Director</h3>
+                            <p>Some text goes here that describes about team members</p>
+                            <h4>abc@gmail.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-tw"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-fb"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-li"> <i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-in"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-yt"> <i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="team">
+                        <div class="team-img">
+                            <img src="zakir.jpeg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Zakir</h2>
+                            <h3>Developer</h3>
+                            <p>Some text goes here that describes about team members</p>
+                            <h4>abc@gmail.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-tw"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-fb"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-li"> <i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-in"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-yt"> <i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="team">
+                        <div class="team-img">
+                            <img src="anubhav.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Anubhav</h2>
+                            <h3>Designer</h3>
+                            <p>Some text goes here that describes about team members</p>
+                            <h4>abc@gmail.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-tw"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-fb"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-li"> <i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-in"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-yt"> <i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+   
+  
+      
+    </div>
+     <footer id="footer">
+            <a href="ourprojects.html"><span id="bts">Next</span></a>
+            <div id="main-footer">            
+                <h2 id="f1">Interior<font style="color: aqua;"></font></h2>
+                <h4 id="f2">Visit Our Website to make your DREAM House</h4><br><br>
+                <h3 id="f3">Visit Our Social Media Handles</h3>
+                <ul id="f4">
+                    <i class="fa-brands fa-square-facebook">Facebook</i>
+					<i class="fa-brands fa-instagram">Instagram</i>
+					<i class="fa-brands fa-linkedin">Linkedin</i>
+					<i class="fa-brands fa-reddit">Reddit</i>
+                   
+                </ul>
+                <p id="licence">Copyright &copy;2023 Interior.Madeby<span>Sharma Abhay</span></p><br>
+            </div>
+        </footer>
+    </body>
+</html>
