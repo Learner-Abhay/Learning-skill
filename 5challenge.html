@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: azure;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript Dom Elements</h1>
+    <section id="example-1">
+        <h2>Accessing dom Elements</h2>
+        <p id="myParagraph">
+            This is a paragraph. click the buttone to change it.
+        </p>
+        <button id="changeTextbutton">Change text</button>
+    </section>
+    <section id="example-2">
+        <h2>Traversing the DOM</h2>
+        <ul id="citiesList">
+            <li>new york</li>
+            <li>tokyo</li>
+            <li>paris</li>
+            <li>london</li>
+        </ul>
+        <button id="Highlight">Highlight 1st city</button>
+    </section>
+    <section id="example-3">
+        <h2>Manipulating DOM elemwnts</h2>
+        <div id="coffeeOrder">Order:
+            <span id="coffeType">Latte</span>
+        </div>
+        <button id="changeOrder">Change Order</button>
+    </section>
+    <section id="example-4">
+        <h2>Create and Insert</h2>
+        <button id="addNewItem">Add Item</button>
+        <ul id="shoppingList">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+
+    <section id="example-5">
+        <h2>Remove Elements</h2>
+        <ul id="tasklist">
+            <li>Task 1</li>
+            <li>Task-2</li>
+            <li>Task-3</li>
+        </ul>
+        <button id="RemoveTask">Remove</button>
+    </section>
+    <script src="dom.js"></script>
+</body>
+</html>
