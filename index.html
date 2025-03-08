@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-    </style>
-    <script src="script.js"></script>
+    <title>TO do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, necessitatibus!</h1>
+    <div class="container">
+        <h1>To do list</h1>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a New task...">
+            <button id="add-task-btn">Add task</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
