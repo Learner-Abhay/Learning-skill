@@ -4,20 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO do List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #250235, #2c4e56);
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
 
-<body>
-    <div class="container">
-        <h1>To do list</h1>
-        <div class="input-container">
-            <input type="text" id="todo-input" placeholder="Add a New task...">
-            <button id="add-task-btn">Add task</button>
-        </div>
-        <ul id="todo-list"></ul>
+        .input-container {
+            margin-bottom: 20px;
+            background: rgba(34, 0, 38, 0.3);
+            padding: 15vh;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background: #820bcc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #weather-info {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            width: 20vh;
+            border-radius: 10px;
+            display: flex;
+            justify-self: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #error-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="input-container">
+        <input type="text" id="city-input" placeholder="Enter City Name">
+        <button id="get-weather-btn">Get weather</button>
     </div>
-    <script src="script.js"></script>
+    <div id="weather-info" class="hidden">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+    </div>
+    <p id="error-message" class="hidden">City not found</p>
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>

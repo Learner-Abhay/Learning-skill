@@ -1,51 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const todoInput = document.getElementById("todo-input");
-  const addTaskButton = document.getElementById("add-task-btn");
-  const todoList = document.getElementById("todo-list");
+  const cityInput = document.getElementById("city-input");
+  const weatherBtn = document.getElementById("get-weather-btn");
+  const weatherInfo = document.getElementById("weather-info");
+  const cityName = document.getElementById("city-name");
+  const temperaTure = document.getElementById("temperature");
+  const descriptionText = document.getElementById("description");
+  const errorMessage = document.getElementById("error-message");
+  const API_KEY = "a67ddc76af987d65390bc95817b50c08"; // Make sure this is correct!
 
-  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  weatherBtn.addEventListener("click", async () => {
+    const city = cityInput.value.trim();
+    if (!city) return;
 
-  tasks.forEach((task) => renderTask(task));
-
-  addTaskButton.addEventListener("click", () => {
-    const taskTest = todoInput.value.trim();
-    if (taskTest === "") return;
-
-    const newTask = {
-      id: Date.now(),
-      text: taskTest,
-      completed: false,
-    };
-    tasks.push(newTask);
-    saveTask();
-    renderTask(newTask);
-    todoInput.value = "";
-    console.log(tasks);
+    try {
+      const weatherData = await fetchWeatherData(city);
+      displayWeatherData(weatherData);
+    } catch (error) {
+      showError();
+    }
   });
 
-  function renderTask(task) {
-    const li = document.createElement("li");
-    li.setAttribute("data-id", task.id);
-    if (task.completed) li.classList.add("completed");
-    li.innerHTML = `<span>${task.text}</span>
-    <button class="delete-btn">Delete</button>`;
-    li.addEventListener("click", (e) => {
-      if (e.target.tagName === "BUTTON") return;
-      task.completed = !task.completed;
-      li.classList.toggle("completed");
-      saveTask();
-    });
+  async function fetchWeatherData(city) {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    const response = await fetch(url);
 
-    li.querySelector("button").addEventListener("click", (e) => {
-      e.stopPropagation();
-      tasks = tasks.filter((t) => t.id !== t.id);
-      li.remove();
-      saveTask();
-    });
-    todoList.appendChild(li);
+    if (!response.ok) {
+      throw new Error("City not found or API error");
+    }
+
+    const data = await response.json();
+    return data;
   }
 
-  function saveTask() {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+  function displayWeatherData(data) {
+    console.log(data);
+    const { name, main, weather } = data;
+    cityName.textContent = name;
+
+    weatherInfo.classList.remove("hidden");
+    errorMessage.classList.add("hidden");
+    temperaTure.textContent = `Temperature: ${main.temp}°C`;
+    descriptionText.textContent = `Description: ${weather[0].description}`;
+  }
+
+  function showError() {
+    weatherInfo.classList.add("hidden");
+    errorMessage.classList.remove("hidden");
   }
 });
