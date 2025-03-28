@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping-Cart</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="container">
-        <h1>Products</h1>
-        <div id="product-list">
-            <!-- Products will be added here -->
-        </div>
-        <h2>Shopping-Cart</h2>
-        <div id="cart-items">
-            <p id="empty-cart">Your cart is empty</p>
-        </div>
-        <div id="cart-total" class="hidden">
-            <p>Total: <span id="total-price">$0.00</span></p>
-            <button id="checkout-btn">Checkout</button>
+        <h1>Expense Tracker</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required>
+            <button type="submit">ADD Expense</button>
+        </form>
+        <h2>Expenses</h2>
+        <ul id="expense-list">
+
+        </ul>
+        <div id="total">
+            <h3>Total:$<span id="total-amount">0.00</span></h3>
         </div>
     </div>
     <script src="script.js"></script>
