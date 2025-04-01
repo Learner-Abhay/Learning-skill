@@ -4,24 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
+    <title>Quiz-App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Expense Tracker</h1>
-        <form id="expense-form">
-            <input type="text" id="expense-name" placeholder="Expense name" required>
-            <input type="number" id="expense-amount" placeholder="Amount" required>
-            <button type="submit">ADD Expense</button>
-        </form>
-        <h2>Expenses</h2>
-        <ul id="expense-list">
+        <h1>Quiz App</h1>
+        <div id="question-container" class="hidden">
+            <div id="quiz-container">
+                <div id="question-text">
+                    <ul id="choices-list">
 
-        </ul>
-        <div id="total">
-            <h3>Total:$<span id="total-amount">0.00</span></h3>
+                    </ul>
+                    <button id="next-btn" class="hidden">Next Question</button>
+                </div>r
+                <div id="result-container" class="hidden">
+                    <h2>Your Score:</h2>
+                    <p id="score"></p>
+                    <button id="reset-btn">Restart-Quiz</button>
+                </div>
+                <button id="start-btn">Start Quiz</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
