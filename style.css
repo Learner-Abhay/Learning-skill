@@ -1,7 +1,7 @@
 body {
-    background-color: #121212;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,67 +10,78 @@ body {
 }
 
 .container {
-    background: #1e1e1e;
+    background-color: #2c2c2c;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
     text-align: center;
-    width: 400px;
 }
 
-h1 {
+h1,
+h2 {
     color: #ffcc00;
 }
 
-#quiz-container {
-    margin-top: 20px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#choices-list {
-    list-style: none;
-    padding: 0;
-}
-
-#choices-list li {
-    background: #292929;
+input {
     padding: 10px;
-    margin: 8px 0;
+    border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#choices-list li:hover {
-    background: #ffcc00;
-    color: #121212;
+    background-color: #3c3c3c;
+    color: white;
+    outline: none;
 }
 
 button {
-    background: #ffcc00;
-    color: #121212;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: background 0.1s ease;
 }
 
 button:hover {
-    background: #ffaa00;
+    background-color: #ff3300;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #444;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3c3c3c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#total h3 {
+    margin: 0;
 }
 
 .hidden {
     display: none;
-}
-
-#result-container {
-    margin-top: 20px;
-}
-
-#score {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffcc00;
 }
